@@ -20,7 +20,7 @@ public class StudentManager {
     for (int i = 0; i < IDs.length; i++)
       if (studentID == IDs[i])
         studentID = IDs[i];
-      else throw new StudentException("Could not find student with ID" + studentID);
+      else throw new StudentException("Could not find student with ID " + studentID);
 
     return Student.getValueOf(studentID);
   }
